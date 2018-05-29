@@ -16,6 +16,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      inject: 'head',
       template: `${PATHS.app}/rooms/room-1.html`,
       filename: 'rooms/room-1.html'
     }),
