@@ -16,8 +16,20 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'room-1',
-      template: `${PATHS.app}/rooms/room-1.html`
+      template: `${PATHS.app}/rooms/room-1.html`,
+      filename: 'rooms/room-1.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: `${PATHS.app}/rooms/room-2.html`,
+      filename: 'rooms/room-2.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: `${PATHS.app}/rooms/room-3.html`,
+      filename: 'rooms/room-3.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: `${PATHS.app}/rooms/room-4.html`,
+      filename: 'rooms/room-4.html'
     })
   ],
   devServer: {
